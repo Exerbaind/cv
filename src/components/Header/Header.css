@@ -1,0 +1,122 @@
+.header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  gap: 40px;
+}
+.logo {
+  font-family: 'Manrope', Arial, sans-serif;
+  font-size: 33px;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+.logo span {
+  color: #86a64f;
+}
+.header nav {
+  display: flex;
+  gap: 29px;
+  margin-left: auto;
+  font-size: 13px;
+}
+.header nav a {
+  color: var(--muted);
+  transition: color 0.2s;
+}
+.header nav a:hover {
+  color: var(--text);
+}
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.language {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font:
+    11px ui-monospace,
+    SFMono-Regular,
+    monospace;
+}
+.language a {
+  padding: 8px 0;
+  color: var(--muted);
+}
+.language a[aria-current='page'] {
+  color: var(--text);
+  font-weight: 700;
+}
+.language > span {
+  color: var(--line);
+}
+.divider {
+  height: 17px;
+  width: 1px;
+  background: var(--line);
+}
+
+.theme-icon {
+  display: inline-flex;
+}
+
+@media (max-width: 640px) {
+  .header {
+    height: 60px;
+    gap: 20px;
+  }
+  .header nav {
+    display: none;
+  }
+  .controls {
+    margin-left: auto;
+    gap: 16px;
+  }
+}
+
+@media print {
+  .header {
+    display: none !important;
+  }
+}
+
+.theme-changing .theme-icon {
+  animation: theme-icon-in 340ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@keyframes theme-icon-in {
+  from {
+    opacity: 0;
+    transform: rotate(-65deg) scale(0.65);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .language a:active {
+    transform: translateY(1px);
+  }
+  .language a {
+    transition:
+      background-color 0.2s,
+      color 0.2s,
+      transform 0.15s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-icon {
+    animation: none;
+  }
+}
+
+@media print {
+  .theme-icon {
+    animation: none !important;
+  }
+}

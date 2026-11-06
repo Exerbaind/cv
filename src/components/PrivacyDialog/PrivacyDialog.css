@@ -1,0 +1,33 @@
+dialog {
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  max-width: 460px;
+  padding: 28px;
+}
+dialog::backdrop {
+  background: #0007;
+  backdrop-filter: blur(4px);
+}
+.dialog-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+.dialog-top h2 {
+  font-size: 20px;
+}
+dialog p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--muted);
+  margin-top: 20px;
+}
+
+@media print {
+  dialog {
+    display: none !important;
+  }
+}

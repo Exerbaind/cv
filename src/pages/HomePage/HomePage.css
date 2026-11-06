@@ -1,0 +1,58 @@
+.header,
+main,
+footer {
+  max-width: 1120px;
+  margin: auto;
+}
+main > section:not(.hero) {
+  padding-top: 88px;
+}
+
+@media (min-width: 1450px) {
+  .header,
+  main,
+  footer {
+    max-width: 1160px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .header,
+  main,
+  footer {
+    margin-left: 48px;
+    margin-right: 48px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header,
+  main,
+  footer {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .header,
+  main,
+  footer {
+    margin-left: 22px;
+    margin-right: 22px;
+  }
+  main > section:not(.hero) {
+    padding-top: 59px;
+  }
+}
+
+@media print {
+  main {
+    margin: 0;
+    max-width: none;
+  }
+  main > section {
+    padding-top: 25px !important;
+    margin-top: 0 !important;
+  }
+}

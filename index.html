@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f7f2" />
+    <meta
+      name="description"
+      content="Dmitry Shamal — Senior Frontend Developer. 7+ years building web products, React interfaces and Telegram Mini Apps."
+    />
+    <meta
+      property="og:title"
+      content="Dmitry Shamal — Senior Frontend Developer"
+    />
+    <meta
+      property="og:description"
+      content="Senior Frontend Developer. React, TypeScript, web applications and Telegram Mini Apps."
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <title>Dmitry Shamal — Senior Frontend Developer</title>
+    <script>
+      try {
+        document.documentElement.dataset.theme =
+          localStorage.getItem('theme') ||
+          (matchMedia('(prefers-color-scheme: dark)').matches
+            ? 'dark'
+            : 'light')
+      } catch {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

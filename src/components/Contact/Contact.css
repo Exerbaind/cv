@@ -1,0 +1,126 @@
+.contact {
+  border-top: 1px solid var(--line);
+  margin-top: 80px;
+  padding: 53px 0 49px !important;
+}
+.contact h2 {
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: -1.8px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact h2 svg {
+  width: 43px;
+  height: 43px;
+  color: #8ca357;
+}
+.contact > p {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 15px 0 27px;
+}
+.contact-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 760px;
+}
+.contact-method {
+  position: relative;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--card);
+}
+.contact-link {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  border-radius: inherit;
+  transition: background-color 0.2s;
+}
+.contact-link:hover {
+  background: var(--surface);
+}
+.contact-channel {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding-right: 32px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.contact-address {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 19px;
+  letter-spacing: -0.5px;
+}
+.contact-address svg {
+  color: var(--muted);
+}
+.contact-method .copy {
+  position: absolute;
+  top: 11px;
+  right: 12px;
+  color: var(--muted);
+}
+.copy-status {
+  height: 15px;
+  display: block;
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 7px;
+}
+
+@media (max-width: 640px) {
+  .contact {
+    margin-top: 54px;
+    padding-top: 36px !important;
+  }
+  .contact h2 {
+    font-size: 30px;
+    letter-spacing: -1.3px;
+    gap: 20px;
+  }
+  .contact h2 svg {
+    width: 28px;
+  }
+  .contact > p {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  .contact-links {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .contact-link {
+    padding: 18px;
+  }
+  .contact-address {
+    font-size: 18px;
+  }
+}
+
+@media print {
+  .copy {
+    display: none !important;
+  }
+  .contact h2 {
+    font-size: 24px;
+  }
+  .contact h2 svg {
+    display: none;
+  }
+  .contact > p {
+    margin: 10px 0;
+  }
+  .contact {
+    padding-bottom: 0 !important;
+  }
+}
