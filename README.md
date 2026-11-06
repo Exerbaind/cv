@@ -13,7 +13,6 @@ bun run dev
 
 ```sh
 bun run format:check
-bun test
 bun run build
 bun run preview
 ```
@@ -27,28 +26,28 @@ Connect the GitHub repository to a static hosting provider, or upload the conten
 - Install command: `bun install --frozen-lockfile`
 - Build command: `bun run build`
 - Output directory: `dist`
-- Publish at the domain root. Asset paths and the PWA start URL use `/`.
+- By default, publish at the domain root. Set `VITE_BASE_PATH=/cv/` for project Pages.
 - Enable HTTPS for PWA installation and offline support.
 
 Keep `bun.lock` in Git. Dependencies, build output, local environment files and temporary files are excluded by `.gitignore`.
+
+## GitHub Pages
+
+The workflow in `.github/workflows/deploy.yml` builds and publishes `dist/` on pushes to `master`. In repository Settings → Pages, choose **GitHub Actions** as Source.
+
+The workflow gets the base path from GitHub Pages configuration, so it supports both `/cv/` and a custom domain. For a local Pages build:
+
+```sh
+VITE_BASE_PATH=/cv/ bun run build
+```
 
 ## Content
 
 - `src/mock/content.ts`: both languages, experience, project descriptions and skills.
 - `public/resume-ru.pdf` and `public/resume-en.pdf`: downloadable résumés. Update these separately when experience changes; editing the website does not update the PDFs.
-- `scripts/build-resume-en.py`: English PDF generator (Python with `reportlab`).
-- `docs/project-sources.json`: project image sources.
 - `src/styles/print.css`: print layout; screen styles live beside their components.
 
-English is served at `/`, Russian at `/ru/`. Old `?lang=ru` and `?lang=en` links still work in the browser. Theme preferences are saved locally.
-
-## SEO
-
-The build generates full HTML for both languages using the existing React components. No server runtime or additional framework is required. Titles, descriptions, social metadata and `ProfilePage`/`Person` structured data are included in each HTML file and updated when switching languages.
-
-After buying a domain, set `VITE_SITE_URL` to its HTTPS origin (for example `https://your-domain.me`) in `.env.local` or the hosting build environment, then rebuild. This enables absolute canonical and hreflang links, `og:url` and `sitemap.xml`. Without a domain, the build omits these URLs instead of publishing placeholders. `robots.txt` is generated in either case.
-
-Once deployed, submit `/sitemap.xml` in Google Search Console and Yandex Webmaster. Ensure the host serves `/ru/index.html` at `/ru/`; a generic SPA fallback should not override that file.
+English is the default language. Use `?lang=ru` or `?lang=en` to choose the language. Theme preferences are saved locally.
 
 ## Optional analytics
 

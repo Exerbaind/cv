@@ -2,7 +2,6 @@ import { useEffect, useState, useSyncExternalStore } from 'react'
 
 import { readStorage } from '@/helpers'
 import { languageFromSearch, urlWithLanguage } from '@/helpers/language'
-import { updateSeo } from '@/helpers/seo'
 import { useInteractions } from '@/hooks/useInteractions'
 import { content } from '@/mock'
 import type { Lang } from '@/types'
@@ -18,9 +17,11 @@ const subscribeOnline = (notify: () => void) => {
 const offlineSnapshot = () => !navigator.onLine
 const serverOfflineSnapshot = () => false
 
-export function useHomePage(initialLang: Lang) {
+export function useHomePage() {
   const { changeLanguage, prepareThemeChange, success } = useInteractions()
-  const [lang, setLang] = useState<Lang>(initialLang)
+  const [lang, setLang] = useState<Lang>(() =>
+    languageFromSearch(window.location.search)
+  )
   const [theme, setTheme] = useState(
     readStorage(
       'theme',
@@ -38,12 +39,12 @@ export function useHomePage(initialLang: Lang) {
   )
   const localizedContent = content[lang]
   useEffect(() => {
-    updateSeo(lang)
+    document.documentElement.lang = lang
   }, [lang])
   useEffect(() => {
     const onPopState = () => {
       void changeLanguage(
-        languageFromSearch(window.location.search, window.location.pathname),
+        languageFromSearch(window.location.search),
         lang,
         setLang
       )

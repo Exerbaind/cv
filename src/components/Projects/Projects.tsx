@@ -2,6 +2,7 @@ import { ArrowUpRight, Github } from 'lucide-react'
 
 import type { ProjectsProps } from '@/components/Projects/types'
 import { SectionTitle } from '@/components/SectionTitle'
+import { assetPath } from '@/helpers/paths'
 
 import '@/components/Projects/Projects.css'
 
@@ -21,7 +22,7 @@ export function Projects({ localizedContent }: ProjectsProps) {
                 {p.logo && (
                   <img
                     className={`project-logo${p.logo.endsWith('.svg') ? ' project-logo-wordmark' : ''}`}
-                    src={p.logo}
+                    src={assetPath(p.logo)}
                     alt=""
                     width={64}
                     height={64}

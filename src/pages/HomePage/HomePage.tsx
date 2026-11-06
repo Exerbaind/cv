@@ -7,12 +7,11 @@ import { PrivacyDialog } from '@/components/PrivacyDialog'
 import { Projects } from '@/components/Projects'
 import { Stack } from '@/components/Stack'
 import { useHomePage } from '@/pages/HomePage/useHomePage'
-import type { Lang } from '@/types'
 
 import '@/pages/HomePage/HomePage.css'
 import '@/styles/print.css'
 
-export function HomePage({ initialLang = 'en' }: { initialLang?: Lang }) {
+export function HomePage() {
   const {
     localizedContent,
     lang,
@@ -24,7 +23,7 @@ export function HomePage({ initialLang = 'en' }: { initialLang?: Lang }) {
     closePrivacy,
     changeLanguage,
     toggleTheme,
-  } = useHomePage(initialLang)
+  } = useHomePage()
   return (
     <>
       <a className="skip" href="#main">

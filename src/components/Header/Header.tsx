@@ -1,13 +1,9 @@
 import { Sun, Moon } from 'lucide-react'
-import { useSyncExternalStore } from 'react'
 
 import type { HeaderProps } from '@/components/Header/types'
+import { languagePath } from '@/helpers/paths'
 
 import '@/components/Header/Header.css'
-
-const subscribe = () => () => {}
-const clientSnapshot = () => true
-const serverSnapshot = () => false
 
 const ids = ['experience', 'projects', 'stack', 'contact']
 
@@ -18,11 +14,6 @@ export function Header({
   onLanguageChange,
   onThemeChange,
 }: HeaderProps) {
-  const hydrated = useSyncExternalStore(
-    subscribe,
-    clientSnapshot,
-    serverSnapshot
-  )
   return (
     <header className="header">
       <a className="logo" href="#" aria-label={localizedContent.name}>
@@ -38,7 +29,7 @@ export function Header({
       <div className="controls">
         <div className="language" aria-label="Language">
           <a
-            href="/"
+            href={languagePath('en')}
             hrefLang="en"
             aria-current={lang === 'en' ? 'page' : undefined}
             data-haptic="manual"
@@ -59,7 +50,7 @@ export function Header({
           </a>
           <span>/</span>
           <a
-            href="/ru/"
+            href={languagePath('ru')}
             hrefLang="ru"
             aria-current={lang === 'ru' ? 'page' : undefined}
             data-haptic="manual"
@@ -86,11 +77,7 @@ export function Header({
           aria-label={lang === 'en' ? 'Toggle color theme' : 'Переключить тему'}
         >
           <span className="theme-icon" key={theme}>
-            {!hydrated || theme === 'light' ? (
-              <Moon size={17} />
-            ) : (
-              <Sun size={17} />
-            )}
+            {theme === 'light' ? <Moon size={17} /> : <Sun size={17} />}
           </span>
         </button>
       </div>

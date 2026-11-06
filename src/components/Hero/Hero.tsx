@@ -2,6 +2,7 @@ import { ArrowUpRight, Download, MapPin } from 'lucide-react'
 import React from 'react'
 
 import type { HeroProps } from '@/components/Hero/types'
+import { assetPath } from '@/helpers/paths'
 
 import '@/components/Hero/Hero.css'
 
@@ -52,7 +53,7 @@ export function Hero({ localizedContent }: HeroProps) {
             </a>
             <a
               className="button secondary"
-              href={localizedContent.cvUrl}
+              href={assetPath(localizedContent.cvUrl)}
               download
             >
               {localizedContent.cv}
