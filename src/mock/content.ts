@@ -170,8 +170,6 @@ export const content = {
     privacyText:
       'When configured, Umami collects aggregate visits, referral sources, approximate countries, browsers and devices. It does not tell me your name or email. No advertising cookies are used.',
     close: 'Close',
-    install: 'Install app',
-    offline: 'You’re offline. The saved version is available.',
   },
   ru: {
     name: 'Дмитрий Шамаль',
@@ -344,8 +342,6 @@ export const content = {
     privacyText:
       'После подключения Umami собирает общую статистику посещений, источники переходов, примерные страны, браузеры и устройства. Имя и email посетителя она не определяет. Рекламные cookies не используются.',
     close: 'Закрыть',
-    install: 'Установить',
-    offline: 'Вы офлайн. Доступна сохранённая версия.',
   },
 }
 export const stack = [

@@ -23,6 +23,10 @@ export default tseslint.config(
     },
   },
   { files: ['*.js'], languageOptions: { globals: globals.node } },
+  {
+    files: ['public/sw.js'],
+    languageOptions: { globals: globals.serviceworker },
+  },
   prettier,
   {
     files: ['**/*.{js,ts,tsx}'],

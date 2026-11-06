@@ -17,7 +17,6 @@ export function HomePage() {
     lang,
     theme,
     privacy,
-    offline,
     success,
     openPrivacy,
     closePrivacy,
@@ -48,11 +47,6 @@ export function HomePage() {
         lang={lang}
         onPrivacyOpen={openPrivacy}
       />
-      {offline && (
-        <div className="offline" role="status">
-          {localizedContent.offline}
-        </div>
-      )}
       <PrivacyDialog
         localizedContent={localizedContent}
         open={privacy}

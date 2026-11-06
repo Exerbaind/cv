@@ -1,21 +1,10 @@
-import { useEffect, useState, useSyncExternalStore } from 'react'
+import { useEffect, useState } from 'react'
 
 import { readStorage } from '@/helpers'
 import { languageFromSearch, urlWithLanguage } from '@/helpers/language'
 import { useInteractions } from '@/hooks/useInteractions'
 import { content } from '@/mock'
 import type { Lang } from '@/types'
-
-const subscribeOnline = (notify: () => void) => {
-  window.addEventListener('online', notify)
-  window.addEventListener('offline', notify)
-  return () => {
-    window.removeEventListener('online', notify)
-    window.removeEventListener('offline', notify)
-  }
-}
-const offlineSnapshot = () => !navigator.onLine
-const serverOfflineSnapshot = () => false
 
 export function useHomePage() {
   const { changeLanguage, prepareThemeChange, success } = useInteractions()
@@ -32,11 +21,6 @@ export function useHomePage() {
     )
   )
   const [privacy, setPrivacy] = useState(false)
-  const offline = useSyncExternalStore(
-    subscribeOnline,
-    offlineSnapshot,
-    serverOfflineSnapshot
-  )
   const localizedContent = content[lang]
   useEffect(() => {
     document.documentElement.lang = lang
@@ -83,7 +67,6 @@ export function useHomePage() {
     lang,
     theme,
     privacy,
-    offline,
     success,
     openPrivacy: () => setPrivacy(true),
     closePrivacy: () => setPrivacy(false),

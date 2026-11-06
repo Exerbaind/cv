@@ -1,6 +1,6 @@
 # Dmitry Shamal · CV
 
-Personal résumé website built with React, TypeScript and Vite. Includes Russian and English versions, light and dark themes, an A4 print layout and PWA support.
+Personal résumé website built with React, TypeScript and Vite. Includes Russian and English versions, light and dark themes and an A4 print layout.
 
 ## Development
 
@@ -27,7 +27,6 @@ Connect the GitHub repository to a static hosting provider, or upload the conten
 - Build command: `bun run build`
 - Output directory: `dist`
 - By default, publish at the domain root. Set `VITE_BASE_PATH=/cv/` for project Pages.
-- Enable HTTPS for PWA installation and offline support.
 
 Keep `bun.lock` in Git. Dependencies, build output, local environment files and temporary files are excluded by `.gitignore`.
 

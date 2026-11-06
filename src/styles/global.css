@@ -122,19 +122,7 @@ svg {
 .skip:focus {
   top: 10px;
 }
-.offline {
-  position: fixed;
-  bottom: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--text);
-  color: var(--bg);
-  padding: 12px 20px;
-  border-radius: 6px;
-  font-size: 12px;
-  z-index: 5;
-  max-width: 90vw;
-}
+
 h1,
 h2,
 h3,
@@ -178,7 +166,6 @@ h3 {
     color: #111 !important;
     font-size: 10px;
   }
-  .offline,
   .skip {
     display: none !important;
   }

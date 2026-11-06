@@ -5,8 +5,3 @@ export interface FooterProps {
   lang: Lang
   onPrivacyOpen: () => void
 }
-
-export interface InstallPrompt extends Event {
-  prompt(): Promise<void>
-  userChoice: Promise<{ outcome: string }>
-}
