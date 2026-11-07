@@ -45,23 +45,6 @@ export function useHomePage() {
       localStorage.setItem('theme', theme)
     } catch {}
   }, [theme])
-  useEffect(() => {
-    const id = import.meta.env.VITE_UMAMI_WEBSITE_ID,
-      src = import.meta.env.VITE_UMAMI_SCRIPT_URL
-    if (!id || !src || navigator.doNotTrack === '1') return
-    try {
-      if (new URL(src).protocol !== 'https:') return
-    } catch {
-      return
-    }
-    const s = document.createElement('script')
-    s.src = src
-    s.defer = true
-    s.dataset.websiteId = id
-    document.head.appendChild(s)
-    return () => s.remove()
-  }, [])
-
   return {
     localizedContent,
     lang,
