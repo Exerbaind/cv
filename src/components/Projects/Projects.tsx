@@ -31,7 +31,7 @@ export function Projects({
               <div className="project-identity">
                 {p.logo && (
                   <img
-                    className={`project-logo${p.logo.endsWith('.svg') ? ' project-logo-wordmark' : ''}`}
+                    className={`project-logo${p.logo.endsWith('/pik.svg') ? ' project-logo-wordmark' : ''}`}
                     src={assetPath(p.logo)}
                     alt=""
                     width={64}
