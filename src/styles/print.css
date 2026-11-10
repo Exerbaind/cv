@@ -169,7 +169,7 @@
   }
 
   #projects,
-  #stack {
+  #personal-projects {
     break-before: page;
   }
 
@@ -231,6 +231,10 @@
     border-radius: 0;
     font-size: 8pt;
     text-decoration: underline;
+  }
+
+  main > #stack {
+    padding-top: 6mm !important;
   }
 
   .stack-grid {

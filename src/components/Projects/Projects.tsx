@@ -6,16 +6,26 @@ import { assetPath } from '@/helpers/paths'
 
 import '@/components/Projects/Projects.css'
 
-export function Projects({ localizedContent }: ProjectsProps) {
+export function Projects({
+  localizedContent,
+  personal = false,
+}: ProjectsProps) {
+  const projects = personal
+    ? localizedContent.personalProjects
+    : localizedContent.projects
   return (
-    <section id="projects">
+    <section id={personal ? 'personal-projects' : 'projects'}>
       <SectionTitle
-        n="02"
-        label={localizedContent.nav[1]}
-        title={localizedContent.projectsTitle}
+        n={personal ? '03' : '02'}
+        label={localizedContent.nav[personal ? 2 : 1]}
+        title={
+          personal
+            ? localizedContent.personalProjectsTitle
+            : localizedContent.projectsTitle
+        }
       />
-      <div className="projects">
-        {localizedContent.projects.map((p) => (
+      <div className={`projects${personal ? ' projects-personal' : ''}`}>
+        {projects.map((p) => (
           <article className="project" key={p.name}>
             <div className="project-body">
               <div className="project-identity">

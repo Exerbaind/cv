@@ -39,6 +39,7 @@ export function HomePage() {
         <Hero localizedContent={localizedContent} />
         <Experience localizedContent={localizedContent} />
         <Projects localizedContent={localizedContent} />
+        <Projects localizedContent={localizedContent} personal />
         <Stack localizedContent={localizedContent} />
         <Contact localizedContent={localizedContent} onSuccess={success} />
       </main>

@@ -5,7 +5,7 @@ import { languagePath } from '@/helpers/paths'
 
 import '@/components/Header/Header.css'
 
-const ids = ['experience', 'projects', 'stack', 'contact']
+const ids = ['experience', 'projects', 'personal-projects', 'stack', 'contact']
 
 export function Header({
   localizedContent,

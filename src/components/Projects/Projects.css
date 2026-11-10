@@ -128,3 +128,7 @@
   padding: 8px;
   background: var(--surface);
 }
+
+.projects-personal {
+  grid-template-columns: minmax(0, 720px);
+}

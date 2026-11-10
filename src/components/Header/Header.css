@@ -120,3 +120,13 @@
     animation: none !important;
   }
 }
+
+@media (min-width: 641px) and (max-width: 900px) {
+  .header {
+    gap: 20px;
+  }
+  .header nav {
+    gap: 16px;
+    font-size: 12px;
+  }
+}

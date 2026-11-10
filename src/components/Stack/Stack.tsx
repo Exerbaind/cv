@@ -8,8 +8,8 @@ export function Stack({ localizedContent }: StackProps) {
   return (
     <section id="stack">
       <SectionTitle
-        n="03"
-        label={localizedContent.nav[2]}
+        n="04"
+        label={localizedContent.nav[3]}
         title={localizedContent.stackTitle}
         note={localizedContent.stackNote}
       />

@@ -9,7 +9,7 @@ export function Contact({ localizedContent, onSuccess }: ContactProps) {
   const { copied, copy } = useContact(onSuccess)
   return (
     <section id="contact" className="contact">
-      <span className="section-label">04 / {localizedContent.nav[3]}</span>
+      <span className="section-label">05 / {localizedContent.nav[4]}</span>
       <h2>
         {localizedContent.contactTitle}
         <ArrowUpRight aria-hidden="true" />

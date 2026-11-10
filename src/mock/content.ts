@@ -1,7 +1,7 @@
 export const content = {
   en: {
     name: 'Dmitry Shamal',
-    nav: ['Experience', 'Projects', 'Stack', 'Contact'],
+    nav: ['Experience', 'Projects', 'Personal projects', 'Stack', 'Contact'],
     role: 'Senior Frontend Developer',
     location: 'Saint Petersburg, Russia',
     headline: ['Building interfaces.', 'Growing products.'],
@@ -144,6 +144,17 @@ export const content = {
         logo: null,
       },
     ],
+    personalProjectsTitle: 'Personal projects',
+    personalProjects: [
+      {
+        name: 'Vecherly',
+        type: 'AI watch recommendations',
+        desc: 'Find something to watch: films, series and videos across different platforms. Search by title, tell the AI assistant what you feel like watching, or let a random pick decide for you.',
+        tags: ['React', 'TypeScript', 'Go', 'Python (scripts)', 'PWA'],
+        url: 'https://vecherly.online/',
+        logo: null,
+      },
+    ],
     stackTitle: 'Technical skills',
     stackNote: 'Core frontend stack, integrations and supporting tools.',
     groups: [
@@ -173,7 +184,7 @@ export const content = {
   },
   ru: {
     name: 'Дмитрий Шамаль',
-    nav: ['Опыт', 'Проекты', 'Стек', 'Контакты'],
+    nav: ['Опыт', 'Проекты', 'Свои проекты', 'Стек', 'Контакты'],
     role: 'Senior Frontend Developer',
     location: 'Санкт-Петербург, Россия',
     headline: ['Создаю интерфейсы.', 'Развиваю продукты.'],
@@ -314,6 +325,17 @@ export const content = {
         desc: 'По своей инициативе разработал библиотеку React/TypeScript-компонентов с темизацией и Storybook. Опубликовал npm-пакет и внедрил библиотеку в Collab Tool.',
         tags: ['TypeScript', 'Storybook', 'npm'],
         github: 'https://github.com/OpenBuilders/ui-kit-public',
+        logo: null,
+      },
+    ],
+    personalProjectsTitle: 'Собственные проекты',
+    personalProjects: [
+      {
+        name: 'Vecherly',
+        type: 'Что посмотреть — с помощью AI',
+        desc: 'Помогает найти, что посмотреть: фильмы, сериалы и видео с разных площадок. Можно искать по названию, рассказать AI-ассистенту, чего хочется, или довериться случайному выбору.',
+        tags: ['React', 'TypeScript', 'Go', 'Python (скрипты)'],
+        url: 'https://vecherly.online/',
         logo: null,
       },
     ],
