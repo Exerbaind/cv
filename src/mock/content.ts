@@ -168,7 +168,7 @@ export const content = {
     privacy: 'Analytics',
     privacyTitle: 'Visitor analytics',
     privacyText:
-      'Umami collects aggregate visits, referral sources, approximate countries, browsers and devices. It does not tell me your name or email. No advertising cookies are used.',
+      'Yandex Metrica collects visit statistics and referral sources. Session Replay and click maps are enabled to analyse how visitors interact with the site.',
     close: 'Close',
   },
   ru: {
@@ -340,7 +340,7 @@ export const content = {
     privacy: 'Аналитика',
     privacyTitle: 'Аналитика посещений',
     privacyText:
-      'Umami собирает общую статистику посещений, источники переходов, примерные страны, браузеры и устройства. Имя и email посетителя она не определяет. Рекламные cookies не используются.',
+      'Яндекс Метрика собирает статистику посещений и источников переходов. Для анализа взаимодействий с сайтом включены Вебвизор и карта кликов.',
     close: 'Закрыть',
   },
 }
