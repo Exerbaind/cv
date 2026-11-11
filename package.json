@@ -10,7 +10,9 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "eslint . --fix && prettier . --write",
-    "format:check": "eslint . && prettier . --check"
+    "format:check": "eslint . && prettier . --check",
+    "resume:setup": "python3 -m venv scripts/resume/.venv && scripts/resume/.venv/bin/pip install -q -r scripts/resume/requirements.txt",
+    "resume": "scripts/resume/.venv/bin/python scripts/resume/build.py"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",

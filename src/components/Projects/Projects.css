@@ -130,5 +130,53 @@
 }
 
 .projects-personal {
-  grid-template-columns: minmax(0, 720px);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-with-video {
+  flex-direction: row-reverse;
+}
+.project-video {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 16px 16px 16px 0;
+}
+.project-video video {
+  display: block;
+  width: 150px;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+}
+
+@media (max-width: 900px) {
+  .projects-personal {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  .project-with-video {
+    flex-direction: column;
+  }
+  .project-video {
+    justify-content: center;
+    padding: 20px 20px 0;
+  }
+  .project-video video {
+    width: 180px;
+  }
+}
+
+@media print {
+  .project-with-video {
+    flex-direction: column;
+  }
+  .project-video {
+    display: none;
+  }
 }

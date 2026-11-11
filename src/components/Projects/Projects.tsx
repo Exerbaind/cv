@@ -26,7 +26,28 @@ export function Projects({
       />
       <div className={`projects${personal ? ' projects-personal' : ''}`}>
         {projects.map((p) => (
-          <article className="project" key={p.name}>
+          <article
+            className={`project${'video' in p && p.video ? ' project-with-video' : ''}`}
+            key={p.name}
+          >
+            {'video' in p && p.video && (
+              <div className="project-video">
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  poster={assetPath(p.video.poster)}
+                  aria-label={p.video.label}
+                  width={540}
+                  height={960}
+                >
+                  <source src={assetPath(p.video.webm)} type="video/webm" />
+                  <source src={assetPath(p.video.mp4)} type="video/mp4" />
+                </video>
+              </div>
+            )}
             <div className="project-body">
               <div className="project-identity">
                 {p.logo && (
