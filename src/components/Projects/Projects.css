@@ -159,16 +159,19 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 640px) {
   .project-with-video {
     flex-direction: column;
   }
-  .project-video {
-    justify-content: center;
-    padding: 20px 20px 0;
+  .project-video-wide {
+    padding: 0;
+    border-bottom: 1px solid var(--line);
   }
-  .project-video video {
-    width: 180px;
+  .project-video-wide video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-radius: 0;
   }
 }
 

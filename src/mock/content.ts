@@ -172,6 +172,11 @@ export const content = {
           mp4: '/projects/shareany.mp4',
           webm: '/projects/shareany.webm',
           poster: '/projects/shareany-poster.jpg',
+          wide: {
+            mp4: '/projects/shareany-wide.mp4',
+            webm: '/projects/shareany-wide.webm',
+            poster: '/projects/shareany-wide-poster.jpg',
+          },
           label: 'ShareAny demo: a link turns into a video in a Telegram chat',
         },
       },
@@ -378,6 +383,11 @@ export const content = {
           mp4: '/projects/shareany.mp4',
           webm: '/projects/shareany.webm',
           poster: '/projects/shareany-poster.jpg',
+          wide: {
+            mp4: '/projects/shareany-wide.mp4',
+            webm: '/projects/shareany-wide.webm',
+            poster: '/projects/shareany-wide-poster.jpg',
+          },
           label: 'Демо ShareAny: ссылка превращается в видео в чате Telegram',
         },
       },

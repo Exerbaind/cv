@@ -3,8 +3,40 @@ import { ArrowUpRight, Github } from 'lucide-react'
 import type { ProjectsProps } from '@/components/Projects/types'
 import { SectionTitle } from '@/components/SectionTitle'
 import { assetPath } from '@/helpers/paths'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
 
 import '@/components/Projects/Projects.css'
+
+type VideoSources = { mp4: string; webm: string; poster: string }
+
+// Phones get a horizontal cut above the text; wider cards keep the vertical one beside it.
+function ProjectVideo({
+  video,
+}: {
+  video: VideoSources & { label: string; wide: VideoSources }
+}) {
+  const narrow = useMediaQuery('(max-width: 640px)')
+  const source = narrow ? video.wide : video
+  return (
+    <div className={`project-video${narrow ? ' project-video-wide' : ''}`}>
+      <video
+        key={source.mp4}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        poster={assetPath(source.poster)}
+        aria-label={video.label}
+        width={narrow ? 960 : 540}
+        height={narrow ? 540 : 960}
+      >
+        <source src={assetPath(source.webm)} type="video/webm" />
+        <source src={assetPath(source.mp4)} type="video/mp4" />
+      </video>
+    </div>
+  )
+}
 
 export function Projects({
   localizedContent,
@@ -30,24 +62,7 @@ export function Projects({
             className={`project${'video' in p && p.video ? ' project-with-video' : ''}`}
             key={p.name}
           >
-            {'video' in p && p.video && (
-              <div className="project-video">
-                <video
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  preload="metadata"
-                  poster={assetPath(p.video.poster)}
-                  aria-label={p.video.label}
-                  width={540}
-                  height={960}
-                >
-                  <source src={assetPath(p.video.webm)} type="video/webm" />
-                  <source src={assetPath(p.video.mp4)} type="video/mp4" />
-                </video>
-              </div>
-            )}
+            {'video' in p && p.video && <ProjectVideo video={p.video} />}
             <div className="project-body">
               <div className="project-identity">
                 {p.logo && (
