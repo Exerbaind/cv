@@ -26,7 +26,7 @@ EN = {
     },
     'profile': (
         'Frontend developer with 7+ years of commercial experience in React and TypeScript. Built Telegram '
-        'Mini Apps with audiences of 100k+ users, including an NFT sticker marketplace that handled 10,000+ purchases '
+        'Mini Apps with up to 200–300k weekly active users, including an NFT sticker marketplace that handled 10,000+ purchases '
         'per second at collection launches. Take products from architecture to release, work in small teams '
         'with cross-review, and go beyond the frontend when needed: BFF on NestJS and Go, Python bots, '
         'Docker and CI/CD. Use AI tools (Claude Code, OpenAI Codex) daily for code analysis, debugging and '
@@ -50,7 +50,7 @@ EN = {
             'role': 'Senior Frontend Developer',
             'dates': 'May 2024 – Present',
             'summary': (
-                'Telegram Mini Apps in the TON ecosystem with audiences of up to 100k+ users. Frontend lead in teams '
+                'Telegram Mini Apps in the TON ecosystem with up to 200–300k weekly active users (Telegram WAU). Frontend lead in teams '
                 'of 2–3 frontend developers or sole frontend developer, depending on the product.'
             ),
             'bullets': [
@@ -67,11 +67,11 @@ EN = {
                 'adopted in Collab Tool. github.com/OpenBuilders/ui-kit-public',
             ],
             'projects': [
-                ('Sticker Pack', 'NFT sticker marketplace in Telegram, 100k+ users. 40+ collections from major '
+                ('Sticker Pack', 'NFT sticker marketplace in Telegram, up to 200–300k weekly active users. 40+ collections from major '
                  'partners and 100+ from users, about 50 of them minted as NFTs on TON. Built timed collection '
                  'launches, sales mechanics, purchases, transfers, minting and burning; launches peaked at 10,000+ '
                  'purchases per second, with 5,000–10,000 stickers selling out in 10–30 seconds. t.me/sticker_bot'),
-                ('Not Games', 'Telegram gaming platform from the creators of Notcoin, 100k+ users: shared player '
+                ('Not Games', 'Telegram gaming platform from the creators of Notcoin, up to 200–300k weekly active users: shared player '
                  'profile, achievements, cross-game inventory and an internal marketplace. Developed achievements, '
                  'items, marketplace and profile customization. t.me/notgames_bot'),
                 ('Earn', 'token distribution campaigns, ~100k users. Built the entire frontend, including real-time '
@@ -158,8 +158,8 @@ RU = {
     },
     'profile': (
         'Frontend-разработчик с 7+ годами коммерческого опыта на React и TypeScript. Разрабатывал Telegram '
-        'Mini Apps с аудиторией 100k+ пользователей, в том числе NFT-маркетплейс стикеров с пиками '
-        '10 000+ покупок в секунду на запусках коллекций. Веду продукт от архитектуры до релиза, работаю '
+        'Mini Apps с аудиторией до 200–300 тыс. активных пользователей в неделю, в том числе NFT-маркетплейс стикеров с пиками '
+        '10 000+ покупок в секунду на запусках коллекций. Веду продукт от архитектуры до релиза, работаю '
         'в небольших командах с перекрёстным ревью и при необходимости выхожу за пределы frontend: BFF на '
         'NestJS и Go, боты на Python, Docker и CI/CD. Каждый день использую AI-инструменты (Claude Code, '
         'OpenAI Codex) для анализа кода, отладки и разработки фич. Рассматриваю frontend, Telegram/Web3 '
@@ -183,7 +183,7 @@ RU = {
             'role': 'Senior Frontend Developer',
             'dates': 'май 2024 – настоящее время',
             'summary': (
-                'Telegram Mini Apps в экосистеме TON с аудиторией до 100k+ пользователей. В зависимости '
+                'Telegram Mini Apps в экосистеме TON с аудиторией до 200–300 тыс. активных пользователей в неделю (WAU по статистике Telegram). В зависимости '
                 'от проекта — лид frontend-команды из 2–3 разработчиков или единственный frontend-разработчик.'
             ),
             'bullets': [
@@ -200,14 +200,14 @@ RU = {
                 'в Collab Tool. github.com/OpenBuilders/ui-kit-public',
             ],
             'projects': [
-                ('Sticker Pack', 'NFT-маркетплейс стикеров в Telegram, 100k+ пользователей. 40+ коллекций от '
+                ('Sticker Pack', 'NFT-маркетплейс стикеров в Telegram, до 200–300 тыс. WAU. 40+ коллекций от '
                  'крупных партнёров и 100+ от пользователей, около 50 выпущены как NFT в TON. Разрабатывал запуски '
                  'коллекций по расписанию, механики продаж, покупку, передачу, минтинг и сжигание; на запусках — '
-                 'пики 10 000+ покупок в секунду, 5–10 тыс. стикеров раскупались за 10–30 секунд. t.me/sticker_bot'),
-                ('Not Games', 'игровая платформа в Telegram от создателей Notcoin, 100k+ пользователей: единый '
+                 'пики 10 000+ покупок в секунду, 5–10 тыс. стикеров раскупались за 10–30 секунд. t.me/sticker_bot'),
+                ('Not Games', 'игровая платформа в Telegram от создателей Notcoin, до 200–300 тыс. WAU: единый '
                  'профиль игрока, достижения, общий инвентарь для нескольких игр, внутренний маркетплейс. '
                  'Разрабатывал достижения, предметы, маркетплейс и кастомизацию профиля. t.me/notgames_bot'),
-                ('Earn', 'кампании распределения токенов, ~100k пользователей. Frontend разработал полностью, '
+                ('Earn', 'кампании распределения токенов, ~100 тыс. пользователей. Frontend разработал полностью, '
                  'включая расчёт наград в реальном времени на клиенте. t.me/earn'),
                 ('Void Game', 'многопользовательская игра на платформе Not Games (React, WebSocket). Принял frontend '
                  'как единственный разработчик и запустил новый сезон: скины, новые награды и игровые режимы. '

@@ -29,7 +29,7 @@ export const content = {
         dates: 'May 2024 — Present',
         tag: 'Current',
         summary:
-          'Building Telegram Mini Apps across the TON ecosystem with audiences of up to 100k+ users. Frontend lead in a team of 2–3 or sole frontend developer, depending on the product.',
+          'Building Telegram Mini Apps across the TON ecosystem with up to 200–300k weekly active users. Frontend lead in a team of 2–3 or sole frontend developer, depending on the product.',
         bullets: [
           'Initiated and built a React/TypeScript UI kit with reusable components, theming and Storybook. Published it as an npm package and introduced it into Collab Tool.',
           'Owned frontend delivery for several applications from scratch: architecture, interfaces and state management. Moved load-heavy logic to the client when backend capacity was limited, such as real-time reward calculation in Earn.',
@@ -89,7 +89,7 @@ export const content = {
       {
         name: 'Sticker Pack',
         type: 'Stickers marketplace',
-        desc: 'An NFT sticker marketplace with 100k+ users: 40+ collections from major partners and 100+ from users. Developed timed collection launches, sales mechanics, purchases, transfers, minting and burning. Launches peaked at 10,000+ purchases per second, with 5,000–10,000 stickers selling out in 10–30 seconds.',
+        desc: 'An NFT sticker marketplace with up to 200–300k weekly active users: 40+ collections from major partners and 100+ from users. Developed timed collection launches, sales mechanics, purchases, transfers, minting and burning. Launches peaked at 10,000+ purchases per second, with 5,000–10,000 stickers selling out in 10–30 seconds.',
         tags: ['React', 'TypeScript', 'Zustand', 'TON', 'Lightweight Charts'],
         url: 'https://t.me/sticker_bot',
         logo: '/projects/sticker-pack.jpg',
@@ -97,7 +97,7 @@ export const content = {
       {
         name: 'Not Games',
         type: 'Gaming platform',
-        desc: 'A gaming platform from the creators of Notcoin with 100k+ users: shared player profile, achievements and inventory across games. Developed achievements, items, marketplace features and profile customization.',
+        desc: 'A gaming platform from the creators of Notcoin with up to 200–300k weekly active users: shared player profile, achievements and inventory across games. Developed achievements, items, marketplace features and profile customization.',
         tags: ['React', 'TypeScript', 'Zustand', 'Go', 'NestJS'],
         url: 'https://t.me/notgames_bot',
         logo: '/projects/not-games.jpg',
@@ -234,7 +234,7 @@ export const content = {
         dates: 'Май 2024 — настоящее время',
         tag: 'Сейчас',
         summary:
-          'Разрабатываю Telegram Mini Apps в экосистеме TON с аудиторией до 100k+ пользователей. В зависимости от продукта — лид frontend-команды из 2–3 человек или единственный frontend-разработчик.',
+          'Разрабатываю Telegram Mini Apps в экосистеме TON с аудиторией до 200–300 тыс. активных пользователей в неделю. В зависимости от продукта — лид frontend-команды из 2–3 человек или единственный frontend-разработчик.',
         bullets: [
           'Инициировал и разработал React/TypeScript UI Kit: переиспользуемые компоненты, темизация, Storybook и публикация npm-пакета. Внедрил библиотеку в Collab Tool.',
           'Самостоятельно создавал frontend нескольких приложений с нуля: архитектуру, интерфейсы и управление состоянием. Переносил нагруженную логику на клиент, когда мощностей backend не хватало, например расчёт наград в реальном времени в Earn.',
@@ -295,7 +295,7 @@ export const content = {
       {
         name: 'Sticker Pack',
         type: 'Маркетплейс стикеров',
-        desc: 'NFT-маркетплейс стикеров с аудиторией 100k+: 40+ коллекций от крупных партнёров и 100+ от пользователей. Разрабатывал запуски коллекций по расписанию, механики продаж, покупку, передачу, минтинг и сжигание. На запусках — пики 10 000+ покупок в секунду, 5–10 тыс. стикеров раскупались за 10–30 секунд.',
+        desc: 'NFT-маркетплейс стикеров с аудиторией до 200–300 тыс. WAU: 40+ коллекций от крупных партнёров и 100+ от пользователей. Разрабатывал запуски коллекций по расписанию, механики продаж, покупку, передачу, минтинг и сжигание. На запусках — пики 10 000+ покупок в секунду, 5–10 тыс. стикеров раскупались за 10–30 секунд.',
         tags: ['React', 'TypeScript', 'Zustand', 'TON', 'Lightweight Charts'],
         url: 'https://t.me/sticker_bot',
         logo: '/projects/sticker-pack.jpg',
@@ -303,7 +303,7 @@ export const content = {
       {
         name: 'Not Games',
         type: 'Игровая платформа',
-        desc: 'Игровая платформа от создателей Notcoin, 100k+ пользователей: единый профиль, достижения и инвентарь для нескольких игр. В команде разрабатывал достижения, предметы, маркетплейс и кастомизацию профиля.',
+        desc: 'Игровая платформа от создателей Notcoin, до 200–300 тыс. WAU: единый профиль, достижения и инвентарь для нескольких игр. В команде разрабатывал достижения, предметы, маркетплейс и кастомизацию профиля.',
         tags: ['React', 'TypeScript', 'Zustand', 'Go', 'NestJS'],
         url: 'https://t.me/notgames_bot',
         logo: '/projects/not-games.jpg',
@@ -328,7 +328,7 @@ export const content = {
       {
         name: 'Earn',
         type: 'Кампании распределения токенов',
-        desc: 'Кампании распределения токенов в Telegram, ~100k пользователей. Полностью разработал frontend, включая расчёт наград в реальном времени на клиенте.',
+        desc: 'Кампании распределения токенов в Telegram, ~100 тыс. пользователей. Полностью разработал frontend, включая расчёт наград в реальном времени на клиенте.',
         tags: ['React', 'TypeScript', 'Telegram Mini Apps'],
         url: 'https://t.me/earn',
         logo: '/projects/earn.jpg',
