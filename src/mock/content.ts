@@ -29,10 +29,10 @@ export const content = {
         dates: 'May 2024 — Present',
         tag: 'Current',
         summary:
-          'Building Telegram Mini Apps across the TON ecosystem. Frontend lead or sole frontend developer, depending on the product.',
+          'Building Telegram Mini Apps across the TON ecosystem with audiences of up to 100k+ users. Frontend lead in a team of 2–3 or sole frontend developer, depending on the product.',
         bullets: [
           'Initiated and built a React/TypeScript UI kit with reusable components, theming and Storybook. Published it as an npm package and introduced it into Collab Tool.',
-          'Owned frontend delivery for several applications from scratch: architecture, interfaces and state management. Moved selected logic to the client to reduce server load in high-traffic products.',
+          'Owned frontend delivery for several applications from scratch: architecture, interfaces and state management. Moved load-heavy logic to the client when backend capacity was limited, such as real-time reward calculation in Earn.',
           'Reviewed code and colleagues’ technical decisions. Adapted existing applications to changes in business models.',
           'Integrated TON wallets and smart contracts, including direct on-chain interactions without a backend API. Built the Telegram Tools ecosystem landing page.',
         ],
@@ -58,7 +58,7 @@ export const content = {
           'Contributed to the pik.ru redesign and expanded customer tools for choosing and buying an apartment, including an interactive property map with search and filters.',
           'Updated the online mortgage calculator to support new subsidized interest rates and purchase terms.',
           'Configured server-side rendering (SSR) and contributed to SEO improvements. The website reached the top 3 for target search queries.',
-          'Extracted shared business logic into microservices for reuse across multiple parts of the platform.',
+          'Extracted the mortgage calculator and the property map into shared npm packages and micro-frontends reused across several repositories.',
         ],
       },
       {
@@ -71,7 +71,7 @@ export const content = {
         bullets: [
           'Built a new website for product selection and purchase enquiries.',
           'Redesigned the existing website and added new features.',
-          'Built a tool for sales managers to quickly prepare commercial proposals.',
+          'Built a commercial proposal tool that let sales managers prepare proposals during the call with a client.',
         ],
       },
     ],
@@ -89,7 +89,7 @@ export const content = {
       {
         name: 'Sticker Pack',
         type: 'Stickers marketplace',
-        desc: 'A marketplace for stickers from major companies and individual users, with the option to mint stickers as NFTs on TON. Developed collection launches, sales mechanics, purchases, transfers and minting, including direct blockchain interactions without a backend API.',
+        desc: 'An NFT sticker marketplace with 100k+ users: 40+ collections from major partners and 100+ from users. Developed timed collection launches, sales mechanics, purchases, transfers, minting and burning. Launches peaked at 10,000+ purchases per second, with 5,000–10,000 stickers selling out in 10–30 seconds.',
         tags: ['React', 'TypeScript', 'Zustand', 'TON', 'Lightweight Charts'],
         url: 'https://t.me/sticker_bot',
         logo: '/projects/sticker-pack.jpg',
@@ -97,7 +97,7 @@ export const content = {
       {
         name: 'Not Games',
         type: 'Gaming platform',
-        desc: 'A shared player profile, achievements and inventory across games. Developed achievements, items, marketplace features and profile customization.',
+        desc: 'A gaming platform from the creators of Notcoin with 100k+ users: shared player profile, achievements and inventory across games. Developed achievements, items, marketplace features and profile customization.',
         tags: ['React', 'TypeScript', 'Zustand', 'Go', 'NestJS'],
         url: 'https://t.me/notgames_bot',
         logo: '/projects/not-games.jpg',
@@ -105,7 +105,7 @@ export const content = {
       {
         name: 'Void Game',
         type: 'Multiplayer game',
-        desc: 'A multiplayer game on the Not Games platform. Led ongoing frontend development as the sole frontend developer, refined game mechanics and launched a new season.',
+        desc: 'A multiplayer game on the Not Games platform. Led ongoing frontend development as the sole frontend developer and launched a new season with skins, new rewards and new game modes.',
         tags: ['React', 'WebSocket', 'Render optimization'],
         url: 'https://t.me/VoidNotHereBot',
         logo: '/projects/void-game.jpg',
@@ -122,7 +122,7 @@ export const content = {
       {
         name: 'Earn',
         type: 'Token distribution campaigns',
-        desc: 'An application for token distribution campaigns in Telegram. Independently built the entire frontend.',
+        desc: 'Token distribution campaigns in Telegram with ~100k users. Built the entire frontend, including real-time reward calculation on the client.',
         tags: ['React', 'TypeScript', 'Telegram Mini Apps'],
         url: 'https://t.me/earn',
         logo: '/projects/earn.jpg',
@@ -191,7 +191,8 @@ export const content = {
       'Saint Petersburg State University of Aerospace Instrumentation',
     degree:
       'Institute of Information Systems and Information Security · Infocommunication Technologies and Communication Systems',
-    languages: 'Russian — native · English — B1, technical documentation',
+    languages:
+      'Russian — native · English — B1, working proficiency: written communication, calls, technical documentation',
     contactTitle: 'Get in touch',
     contactText:
       'For frontend roles and product development enquiries, contact me by email or Telegram.',
@@ -233,10 +234,10 @@ export const content = {
         dates: 'Май 2024 — настоящее время',
         tag: 'Сейчас',
         summary:
-          'Разрабатываю Telegram Mini Apps в экосистеме TON. В зависимости от продукта — технический лидер frontend-направления или единственный frontend-разработчик.',
+          'Разрабатываю Telegram Mini Apps в экосистеме TON с аудиторией до 100k+ пользователей. В зависимости от продукта — лид frontend-команды из 2–3 человек или единственный frontend-разработчик.',
         bullets: [
           'Инициировал и разработал React/TypeScript UI Kit: переиспользуемые компоненты, темизация, Storybook и публикация npm-пакета. Внедрил библиотеку в Collab Tool.',
-          'Самостоятельно создавал frontend нескольких приложений с нуля: архитектуру, интерфейсы и управление состоянием. В нагруженных продуктах переносил часть логики на клиент, чтобы разгрузить серверы.',
+          'Самостоятельно создавал frontend нескольких приложений с нуля: архитектуру, интерфейсы и управление состоянием. Переносил нагруженную логику на клиент, когда мощностей backend не хватало, например расчёт наград в реальном времени в Earn.',
           'Проводил code review и оценивал технические решения коллег. Перерабатывал существующие приложения при смене бизнес-модели.',
           'Интегрировал TON, кошельки и смарт-контракты, в том числе прямое взаимодействие с блокчейном без backend API. Разработал лендинг экосистемы Telegram Tools.',
         ],
@@ -263,7 +264,7 @@ export const content = {
           'Участвовал в редизайне pik.ru и расширял возможности клиентов при выборе и покупке квартиры, включая интерактивную карту объектов с поиском и фильтрацией.',
           'Обновлял онлайн-калькулятор ипотеки с учётом новых льготных ставок и условий покупки.',
           'Настраивал серверный рендеринг (SSR) и участвовал в SEO-оптимизации. Сайт вышел в топ-3 по целевым поисковым запросам.',
-          'Выносил общую бизнес-логику в микросервисы для повторного использования в разных частях платформы.',
+          'Вынес ипотечный калькулятор и карту в общие npm-пакеты и микрофронтенды, которые переиспользуются в нескольких репозиториях.',
         ],
       },
       {
@@ -276,7 +277,7 @@ export const content = {
         bullets: [
           'Разработал новый сайт для выбора товаров и оформления заявки на покупку.',
           'Выполнил редизайн существующего сайта и добавил новые функции.',
-          'Создал инструмент для менеджеров, позволяющий быстро готовить коммерческие предложения.',
+          'Создал инструмент для коммерческих предложений: менеджеры стали готовить КП прямо во время разговора с клиентом.',
         ],
       },
     ],
@@ -294,7 +295,7 @@ export const content = {
       {
         name: 'Sticker Pack',
         type: 'Маркетплейс стикеров',
-        desc: 'Маркетплейс стикеров от крупных компаний и обычных пользователей с возможностью выпуска стикеров в виде NFT в сети TON. Разрабатывал запуск коллекций, механики продаж, покупку, передачу и минтинг, включая прямое взаимодействие с блокчейном без backend API.',
+        desc: 'NFT-маркетплейс стикеров с аудиторией 100k+: 40+ коллекций от крупных партнёров и 100+ от пользователей. Разрабатывал запуски коллекций по расписанию, механики продаж, покупку, передачу, минтинг и сжигание. На запусках — пики 10 000+ покупок в секунду, 5–10 тыс. стикеров раскупались за 10–30 секунд.',
         tags: ['React', 'TypeScript', 'Zustand', 'TON', 'Lightweight Charts'],
         url: 'https://t.me/sticker_bot',
         logo: '/projects/sticker-pack.jpg',
@@ -302,7 +303,7 @@ export const content = {
       {
         name: 'Not Games',
         type: 'Игровая платформа',
-        desc: 'Единый профиль, достижения и инвентарь для нескольких игр. В команде разрабатывал достижения, предметы, маркетплейс и кастомизацию профиля.',
+        desc: 'Игровая платформа от создателей Notcoin, 100k+ пользователей: единый профиль, достижения и инвентарь для нескольких игр. В команде разрабатывал достижения, предметы, маркетплейс и кастомизацию профиля.',
         tags: ['React', 'TypeScript', 'Zustand', 'Go', 'NestJS'],
         url: 'https://t.me/notgames_bot',
         logo: '/projects/not-games.jpg',
@@ -310,7 +311,7 @@ export const content = {
       {
         name: 'Void Game',
         type: 'Многопользовательская игра',
-        desc: 'Многопользовательская игра на платформе Not Games. Самостоятельно вёл развитие frontend, дорабатывал игровые механики и запустил новый сезон.',
+        desc: 'Многопользовательская игра на платформе Not Games. Самостоятельно вёл развитие frontend, запустил новый сезон со скинами, новыми наградами и игровыми режимами.',
         tags: ['React', 'WebSocket', 'Render optimization'],
         url: 'https://t.me/VoidNotHereBot',
         logo: '/projects/void-game.jpg',
@@ -327,7 +328,7 @@ export const content = {
       {
         name: 'Earn',
         type: 'Кампании распределения токенов',
-        desc: 'Приложение для кампаний распределения токенов в Telegram. Полностью самостоятельно разработал frontend.',
+        desc: 'Кампании распределения токенов в Telegram, ~100k пользователей. Полностью разработал frontend, включая расчёт наград в реальном времени на клиенте.',
         tags: ['React', 'TypeScript', 'Telegram Mini Apps'],
         url: 'https://t.me/earn',
         logo: '/projects/earn.jpg',
@@ -395,7 +396,8 @@ export const content = {
     university: 'ГУАП, Санкт-Петербург',
     degree:
       'Институт информационных систем и защиты информации · Инфокоммуникационные технологии и системы связи',
-    languages: 'Русский — родной · Английский — B1, техническая документация',
+    languages:
+      'Русский — родной · Английский — B1, рабочий уровень: переписка, созвоны, техническая документация',
     contactTitle: 'Связаться со мной',
     contactText:
       'По предложениям о работе и разработке продуктов — пишите на почту или в Telegram.',
